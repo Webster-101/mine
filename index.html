@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Design Services | PixelProducers - Expert Web Design Agency</title>
+    <!-- Include your meta description below -->
+    <meta name="description" content="Discover the Art of Web Design | PixelProducers - Your Expert Web Design Agency. We create stunning websites that captivate, engage, and convert. Elevate your online presence with our award-winning design services.">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Add your custom CSS here -->
+    <style>
+      /* Header Section CSS */
+      .header {
+        position: relative;
+        background-color: #333; /* Fallback color */
+        color: white;
+        text-align: center;
+        padding: 100px 0;
+      }
+
+            /* Colorful "P" and "ixel" CSS */
+      .text-light-blue {
+        color: rgb(0, 204, 255);
+      }
+
+      .text-reddish-pink {
+        color: #FF1493; /* Reddish pink color */
+      }
+
+
+
+            /* Service Item CSS */
+      .service-item {
+          background-color: #f9f9f9;
+          padding: 20px;
+          border-radius: 5px;
+          text-align: center;
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+          transition: transform 0.3s ease-in-out;
+          height: 100%;
+      }
+
+      .service-item:hover {
+          transform: translateY(-5px);
+      }
+
+
+
+
+
+/* Custom Carousel Styles */
+      #processCarousel {
+          background-color: #f8f9fa;
+          border-radius: 5px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      }
+
+      .carousel-inner {
+          text-align: center;
+      }
+
+      .carousel-control-prev,
+      .carousel-control-next {
+          background-color: rgba(0, 0, 0, 0.3);
+          border-radius: 50%;
+          padding: 10px;
+          width: 40px;
+          height: 40px;
+          top: 50%;
+          transform: translateY(-50%);
+      }
+
+      .carousel-control-prev-icon,
+      .carousel-control-next-icon {
+          background-color: #fff;
+          border-radius: 50%;
+          width: 24px;
+          height: 24px;
+          line-height: 24px;
+          font-size: 16px;
+      }
+
+      .carousel-control-prev-icon:before {
+          content: '\2190'; /* Left arrow */
+      }
+
+      .carousel-control-next-icon:before {
+          content: '\2192'; /* Right arrow */
+      }
+
+      .carousel-indicators {
+          justify-content: center;
+          margin-top: 20px;
+      }
+
+      .carousel-indicators li {
+          background-color: #007bff;
+          border: 1px solid #007bff;
+          border-radius: 50%;
+          width: 12px;
+          height: 12px;
+          margin: 0 8px;
+      }
+
+      .carousel-indicators .active {
+          background-color: #fff;
+          border-color: #007bff;
+      }
+
+      .custom-indicators {
+    position: relative;
+    margin-top: 20px; /* Adjust the margin-top value as needed */
+  }
+
+
+
+
+
+
+
+
+    /* Custom CSS for Testimonials Section */
+    .testimonial-card {
+      background-color: #007BFF;
+      color: white;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .testimonial-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .testimonial-avatar {
+      width: 100px;
+      height: 100px;
+      background-color: #fff;
+      border-radius: 50%;
+      overflow: hidden;
+      display: inline-block;
+    }
+
+    .testimonial-avatar img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: cover;
+    }
+
+    /* Text Color */
+    .testimonial-content h5,
+    .testimonial-content p {
+      color: white;
+    }
+
+
+
+
+
+
+
+    /* Custom CSS for enhanced styling */
+    .package-card {
+        border: 0;
+        border-radius: 15px;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+        transition: transform 0.2s;
+    }
+
+    .package-card:hover {
+        transform: scale(1.05);
+    }
+
+    .card-header {
+        background-color: #007BFF;
+        color: #fff;
+        text-align: center;
+    }
+
+    .package-title {
+        font-size: 24px;
+    }
+
+    .package-price {
+        font-size: 20px;
+    }
+
+    .list-group-item {
+        font-size: 18px;
+    }
+
+    /* Style for the entire section */
+    .package-section {
+        background-color: #ffffff; /* Light grey background for the section */
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+
+
+
+
+    .custom-newsletter-section {
+    background-color: #333333;
+    color: #3B5998;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+  }
+
+  .custom-newsletter-content {
+    max-width: 600px;
+    margin-right: 20px;
+    opacity: 0;
+    transition: opacity 1s ease;
+  }
+
+  .custom-newsletter-heading {
+    font-size: 24px;
+  }
+
+  .custom-newsletter-description {
+    font-size: 16px;
+  }
+
+  .custom-newsletter-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .custom-newsletter-input {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .custom-newsletter-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FF6666;
+    color: white;
+    cursor: pointer;
+  }
+
+  .custom-newsletter-image {
+    width: 100%;
+    max-width: 600px;
+  }
+
+
+
+
+
+      /* Custom CSS for enhanced styling */
+      .project-card {
+        border: 0;
+        border-radius: 15px;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+        transition: transform 0.2s;
+    }
+
+    .project-card:hover {
+        transform: scale(1.05);
+    }
+
+    .card-img-top {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .card-title {
+        font-size: 24px;
+    }
+
+    .card-text {
+        font-size: 18px;
+    }
+
+    .btn-primary {
+        background-color: #007BFF;
+        border: none;
+        transition: background-color 0.3s;
+    }
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+    }
+
+    </style>
+</head>
+<body>
+
+<!-- Header Section -->
+<section class="bg-primary text-white text-center py-5">
+  <div class="container">
+    <h1 class="display-4 font-weight-bold">
+      <span class="text-light-blue">P</span>ixel<span class="text-reddish-pink">P</span>roducers
+    </h1>
+    <p class="lead">Crafting Beautiful Websites for Your Business</p>
+    <a href="https://wa.me/message/L66YU7K6QV7KL1" class="btn btn-light btn-lg rounded-pill px-4 py-2">Contact Us Now!</a>
+  </div>
+</section>
+
+<!-- New Newsletter Signup Section -->
+<section class="custom-newsletter-section">
+    <div class="custom-newsletter-content">
+      <h2 class="custom-newsletter-heading">Subscribe to Our Newsletter</h2>
+      <p class="custom-newsletter-description">Stay updated with our latest news and offers.</p>
+      <form class="custom-newsletter-form" action="your-newsletter-action-url" method="post">
+        <input class="custom-newsletter-input" type="email" name="email" placeholder="Your Email Address" required>
+        <button class="custom-newsletter-button" type="submit">Subscribe</button>
+      </form>
+    </div>
+    <img class="custom-newsletter-image" src="newsletter-image.jpg" alt="Newsletter Image">
+  </section>
+
+
+
+
+<!-- Service Section with Increased Spacing on Mobile -->
+<section class="container my-5">
+  <div class="row">
+      <div class="col-md-12 col-lg-4 mb-4 mb-lg-0">
+          <div class="service-item">
+              <h2>More Sales <span class="emoji">💼</span></h2>
+              <p>Our websites are designed to convert visitors into customers, boosting your sales.</p>
+          </div>
+      </div>
+      <div class="col-md-12 col-lg-4 mb-4 mb-lg-0">
+          <div class="service-item">
+              <h2>Boost Your Online Presence <span class="emoji">🚀</span></h2>
+              <p>Generate more leads with our user-friendly and engaging websites.</p>
+          </div>
+      </div>
+      <div class="col-md-12 col-lg-4 mb-4 mb-lg-0">
+          <div class="service-item">
+              <h2>Creative Design <span class="emoji">🎨</span></h2>
+              <p>We specialize in creating stunning and unique web designs to make your brand stand out.</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- Process Section (Styled Carousel with Adjustments) -->
+<section class="container my-5 py-4">
+  <h2 class="text-center">Our Process</h2>
+  <div id="processCarousel" class="carousel slide" data-ride="carousel">
+
+      <!-- Carousel Content -->
+      <div class="carousel-inner">
+          <div class="carousel-item active">
+              <img src="imgs/icons8-information-96.png" class="img-fluid mx-auto d-block" alt="Step 1: Gather Details">
+              <h3 class="text-center mt-3">Step 1: Gather Details</h3>
+              <p class="text-center">We start by gathering all the necessary details about your project and requirements.</p>
+          </div>
+          <div class="carousel-item">
+              <img src="imgs/icons8-design-96.png" class="img-fluid mx-auto d-block" alt="Step 2: Design Website">
+              <h3 class="text-center mt-3">Step 2: Design Website</h3>
+              <p class="text-center">Our team creates stunning design concepts for your website.</p>
+          </div>
+          <div class="carousel-item">
+              <img src="imgs/icons8-developer-100.png" class="img-fluid mx-auto d-block" alt="Step 3: Develop Website">
+              <h3 class="text-center mt-3">Step 3: Develop Website</h3>
+              <p class="text-center">We develop the website based on the approved design, ensuring functionality and user-friendliness.</p>
+          </div>
+          <div class="carousel-item">
+              <img src="imgs/icons8-test-100.png" class="img-fluid mx-auto d-block" alt="Step 4: Troubleshoot & Test Website">
+              <h3 class="text-center mt-3">Step 4: Troubleshoot & Test Website</h3>
+              <p class="text-center">We thoroughly test and troubleshoot the website to ensure it works flawlessly.</p>
+          </div>
+          <div class="carousel-item">
+              <img src="imgs/icons8-change-96.png" class="img-fluid mx-auto d-block" alt="Step 5: Revisions and Changes">
+              <h3 class="text-center mt-3">Step 5: Revisions and Changes</h3>
+              <p class="text-center">You have the opportunity to request revisions and changes to the website.</p>
+          </div>
+          <div class="carousel-item">
+              <img src="imgs/icons8-handshake-96.png" class="img-fluid mx-auto d-block" alt="Step 6: Hand Over to Client">
+              <h3 class="text-center mt-3">Step 6: Hand Over to Client</h3>
+              <p class="text-center">We hand over the final product/website to you, ready for launch.</p>
+          </div>
+      </div>
+
+      <!-- Indicators with custom CSS positioning -->
+      <ol class="carousel-indicators custom-indicators">
+        <li data-target="#processCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#processCarousel" data-slide-to="1"></li>
+        <li data-target="#processCarousel" data-slide-to="2"></li>
+        <li data-target="#processCarousel" data-slide-to="3"></li>
+        <li data-target="#processCarousel" data-slide-to="4"></li>
+        <li data-target="#processCarousel" data-slide-to="5"></li>
+    </ol>
+
+
+      <!-- Controls -->
+      <a class="carousel-control-prev" href="#processCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#processCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+      </a>
+  </div>
+</section>
+
+
+
+
+
+
+
+<div class="container">
+  <h2 class="text-center mb-5">What Our Clients Say</h2>
+  <div class="row">
+    <!-- Testimonial Cards -->
+    <div class="col-lg-4 mb-4">
+      <div class="testimonial-card text-center p-4 rounded shadow">
+        <div class="testimonial-avatar mx-auto">
+          <img src="imgs/logo1.jpg" alt="Profile Picture">
+        </div>
+        <div class="testimonial-content mt-4">
+          <p class="mb-4">"Thank you Pixel Producers for the website, truely appreciate it!"</p>
+          <h5 class="mb-0">Regal Oaks Limited</h5>
+          <p class="p">CEO</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 mb-4">
+      <div class="testimonial-card text-center p-4 rounded shadow">
+        <div class="testimonial-avatar mx-auto">
+          <img src="imgs/logo2.png" alt="Profile Picture">
+        </div>
+        <div class="testimonial-content mt-4">
+          <p class="mb-4">"PixelProducers. Listen if your an ecom store just starting out or you have a website already i would HIGHLY recommend using PixelProducers, top notch website, amazing customer service and very quick delivery time. Would recommend"</p>
+          <h5 class="mb-0">MailWrite</h5>
+          <p class="p">Founder</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 mb-4">
+      <div class="testimonial-card text-center p-4 rounded shadow">
+        <div class="testimonial-avatar mx-auto">
+          <img src="imgs/logo3.png" alt="Profile Picture">
+        </div>
+        <div class="testimonial-content mt-4">
+          <p class="mb-4">"Big thanks to PixelProducers for the great website, very short delivery time and awesome client service!"</p>
+          <h5 class="mb-0">Copy Charm</h5>
+          <p class="p">CEO, Copy.Charm</p>
+        </div>
+      </div>
+    </div>
+    <!-- End Testimonial Cards -->
+  </div>
+</div>
+</section>
+
+
+
+
+
+
+<!-- Portfolio Section using Bootstrap -->
+<section id="portfolio" class="container mt-5">
+    <h2 class="text-center">Portfolio</h2>
+
+    <div class="row">
+        <!-- Project 1 -->
+        <div class="col-md-4 mb-4">
+            <div class="card project-card">
+                <img src="imgs/project 1.PNG" class="card-img-top" alt="Project 1">
+                <div class="card-body">
+                    <h3 class="card-title">Project 1: Accountancy Firm Website Template</h3>
+                    <p class="card-text">This is one of my templates i would highly recommend to an accountancy firm as it includes all of the necessary features they would need from contact links for enquires to testimonials that build trust between your prospects and your firm.</p>
+                    <a href="https://webster-101.github.io/landingpage1/" class="btn btn-primary" target="_blank">View Demo</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="card project-card">
+                <img src="imgs/project 2.PNG" class="card-img-top" alt="Project 2">
+                <div class="card-body">
+                    <h3 class="card-title">Project 2: Freelance Accountant Template</h3>
+                    <p class="card-text">The Freelance Accountant Landing Page is a cost-effective, customizable platform designed to help freelance accountants present a professional image, attract clients, and succeed in their field through portfolio showcasing, resource access, and SEO optimization.</p>
+                    <a href="https://webster-101.github.io/landingpage2/" class="btn btn-primary" target="_blank">View Demo</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="col-md-4 mb-4">
+            <div class="card project-card">
+                <img src="imgs/project 3.PNG" class="card-img-top" alt="Project 3">
+                <div class="card-body">
+                    <h3 class="card-title">Project 3: Email Marketing Website</h3>
+                    <p class="card-text">This website is one of my previous clients website, this is very high-end quality and includes all the interactive features they would need in order to get ahead of their competition. This is the type of quality that puts businesses ahead of their competition!</p>
+                    <a href="https://webster-101.github.io/client8/" class="btn btn-primary" target="_blank">View Demo</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Repeat this structure for each project with placeholder images -->
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Regular Service Packages Section -->
+<section class="container my-5 package-section">
+    <h2 class="text-center">Regular Services</h2>
+    <div class="row">
+        <!-- Basic -->
+        <div class="col-md-4 mb-3">
+            <div class="card package-card">
+                <div class="card-header">
+                    <h3 class="package-title">Basic</h3>
+                </div>
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div>
+                                <small class="text-muted">Includes:</small>
+                            </div>
+                            <span class="badge badge-primary badge-pill package-price">£250GBP</span>
+                        </li>
+                        <li class="list-group-item">- 1-2 Pages</li>
+                        <li class="list-group-item">- Website Files</li>
+                        <li class="list-group-item">- Responsive Design</li>
+                        <li class="list-group-item">- 2 Free Revisions</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Standard -->
+        <div class="col-md-4 mb-3">
+            <div class="card package-card">
+                <div class="card-header">
+                    <h3 class="package-title">Standard</h3>
+                </div>
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div>
+                                <small class="text-muted">Includes:</small>
+                            </div>
+                            <span class="badge badge-primary badge-pill package-price">£450GBP</span>
+                        </li>
+                        <li class="list-group-item">- 3-5 Pages</li>
+                        <li class="list-group-item">- Website Files</li>
+                        <li class="list-group-item">- Responsive Design</li>
+                        <li class="list-group-item">- 5 Free Revisions</li>
+                        <li class="list-group-item">- Domain Name</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Premium -->
+        <div class="col-md-4 mb-3">
+            <div class="card package-card">
+                <div class="card-header">
+                    <h3 class="package-title">Premium</h3>
+                </div>
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div>
+                                <small class="text-muted">Includes:</small>
+                            </div>
+                            <span class="badge badge-primary badge-pill package-price">£750GBP</span>
+                        </li>
+                        <li class="list-group-item">- Unlimited Pages</li>
+                        <li class="list-group-item">- Website Files</li>
+                        <li class="list-group-item">- Responsive Design</li>
+                        <li class="list-group-item">- 8 Free Revisions</li>
+                        <li class="list-group-item">- Domain Name</li>
+                        <li class="list-group-item">- Web Hosting</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Retainer Packages Section -->
+<section class="container my-5 package-section">
+    <h2 class="text-center">Retainer Packages</h2>
+    <div class="row">
+        <!-- Basic -->
+        <div class="col-md-4 mb-3">
+            <div class="card package-card">
+                <div class="card-header">
+                    <h3 class="package-title">Basic</h3>
+                </div>
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div>
+                                <small class="text-muted">Includes:</small>
+                            </div>
+                            <span class="badge badge-primary badge-pill package-price">£150GBP/month</span>
+                        </li>
+                        <li class="list-group-item">- Maintenance & Security</li>
+                        <li class="list-group-item">- Web Hosting</li>
+                        <li class="list-group-item">- Domain Name</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Standard -->
+        <div class="col-md-4 mb-3">
+            <div class="card package-card">
+                <div class="card-header">
+                    <h3 class="package-title">Standard</h3>
+                </div>
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div>
+                                <small class="text-muted">
+
+                                    Includes:</small>
+                            </div>
+                            <span class="badge badge-primary badge-pill package-price">£350GBP/month</span>
+                        </li>
+                        <li class="list-group-item">- Maintenance & Security</li>
+                        <li class="list-group-item">- Web Hosting</li>
+                        <li class="list-group-item">- Domain Name</li>
+                        <li class="list-group-item">- Content Update</li>
+                        <li class="list-group-item">- Tracking Analytics</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Premium -->
+        <div class="col-md-4 mb-3">
+            <div class="card package-card">
+                <div class="card-header">
+                    <h3 class="package-title">Premium</h3>
+                </div>
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div>
+                                <small class="text-muted">Includes:</small>
+                            </div>
+                            <span class="badge badge-primary badge-pill package-price">£750GBP/month</span>
+                        </li>
+                        <li class="list-group-item">- Maintenance & Security</li>
+                        <li class="list-group-item">- Web Hosting</li>
+                        <li class="list-group-item">- Domain Name</li>
+                        <li class="list-group-item">- Content Update</li>
+                        <li class="list-group-item">- Tracking Analytics</li>
+                        <li class="list-group-item">- SEO</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Call to Action Section -->
+<section class="bg-primary text-white py-5">
+  <div class="container text-center">
+      <h2>Ready to Transform Your Online Presence?</h2>
+      <p>Let's create something amazing together.</p>
+      <a href="https://wa.me/message/L66YU7K6QV7KL1" class="btn btn-light btn-lg rounded-pill px-4 py-2">Contact Us Now!</a>
+  </div>
+</section>
+
+
+
+
+<!-- Footer -->
+<footer class="bg-dark text-light text-center py-3">
+    <div class="container">
+        &copy; 2023 PixelProducers
+    </div>
+</footer>
+<!-- End of Footer -->
+
+<script>
+ // Add fading-in effect to the content
+ document.addEventListener("DOMContentLoaded", function () {
+    document.querySelector(".custom-newsletter-content").style.opacity = 1;
+  });
+
+</script>
+
+
+
+<!-- Bootstrap Scripts -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
